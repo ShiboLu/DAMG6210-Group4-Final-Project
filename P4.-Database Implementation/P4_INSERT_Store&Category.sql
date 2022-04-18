@@ -32,9 +32,9 @@ INSERT INTO Store_T (StoreID, StoreTelephone, StoreRegion, StoreOpeningDate, Tot
 
 
 INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200001, 0800007, 'Juices', 0202001, 'Enjoy the delicious, all-natural refreshment of Simply Lemonade combined with the sweet taste of strawberries.', 'Common');
+	VALUES (0200001, 0800007, 'Juices', 0202001, 'Enjoy the delicious, all-natural refreshment of Simply Lemonade.', 'Common');
 INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200002, 0800008, 'Beverages', 0202002, 'Statements regarding dietary supplements have not been evaluated by the FDA and are not intended to diagnose.', 'Durable');
+	VALUES (0200002, 0800008, 'Beverages', 0202002, 'Statements regarding dietary supplements have not been evaluated by the FDA.', 'Durable');
 INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
 	VALUES (0200003, 0800009, 'Coffees', 0202003, 'This product is labelled to United States standards and may differ from similar products sold.', 'Consumer');
 INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
