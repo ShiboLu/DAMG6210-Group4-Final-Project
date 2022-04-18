@@ -31,33 +31,31 @@ INSERT INTO Store_T (StoreID, StoreTelephone, StoreRegion, StoreOpeningDate, Tot
 
 
 
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200001, 0800007, 'Juices', 0202001, 'Enjoy the delicious, all-natural refreshment of Simply Lemonade.', 'Common');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200002, 0800008, 'Beverages', 0202002, 'Statements regarding dietary supplements have not been evaluated by the FDA.', 'Durable');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200003, 0800009, 'Coffees', 0202003, 'This product is labelled to United States standards and may differ from similar products sold.', 'Consumer');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200004, 0800002, 'Digital Game', 0202004, 'Online shopping for Video Games from a great selection of PC, Mac.', 'Digital');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200005, 0800003, 'Gem', 0202005, 'Gem gives you unparalleled visibility into your Hiring Funnel and your recruiting ROI', 'Luxury');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200006, 0800003, 'Necklace', 0202006, 'Discover on-trend necklaces to layer like pendants, chokers, drop.', 'Luxury');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200007, 0800003, 'Phone', 0202007, 'Explore T-Mobile selection of the latest cell phones and smartphones.', 'Consumer');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200008, 0800005, 'Handbag', 0202008, 'Shop Target for Handbags & Purses you will love at great low prices.', 'Consumer');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200009, 0800004, 'Windbreaker', 0202009, 'A windbreaker, or a windcheater, is a thin fabric jacket designed to resist wind chill.', 'Consumer');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200010, 0800006, 'Shoulder bag', 0202010, 'Free shipping and returns on shoulder bags for women.', 'Consumer');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200011, 0800010, 'Computer', 0202011, 'A computer is a digital electronic machine that can be programmed to carry out sequences.', 'Consumer');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200012, 0800011, 'Ring', 0202012, 'Create a Ring of Security around your home', 'Luxury');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200013, 0800012, 'Book', 0202013, 'A book is a medium for recording information in the form of writing or images.', 'Superior');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200014, 0800014, 'Chair', 0202014, 'Explore our extensive range of chairs for your dining room, living room and office.', 'Superior');
-INSERT INTO Category_T (CategoryID, StoreID, CategoryName, AisleNumber, CategoryDescription, CategoryType) 
-	VALUES (0200015, 0800015, 'Bed', 0202015, 'Visit us in store or online to find comfortable, well-designed beds, bed frames.', 'Consumer');
+INSERT INTO Category_T VALUES
+    (200001, 800001, 'Beverages', 201001, 'Enjoy the delicious, all-natural refreshment of Simply Lemonade combin', 'Common'),
+(200002, 800015, 'Beverages', 215001, 'Enjoy the delicious, all-natural refreshment of Simply Lemonade combin', 'Common'),
+(200003, 800001, 'Coffee', 201002, 'This product is labelled to United States standards and may differ from similar products sold.', 'Common'),
+(200004, 800001, 'Digital Games', 201003, 'Online shopping for Video Games from a great selection of PC, Mac.', 'Digital'),
+(200005, 800001, 'Books', 201009, 'A book is a medium for recording information in the form of writing or images.', 'Superior'),
+(200006, 800015, 'Accesories', 215005, 'Shop Target for Handbags & Purses you will love at great low prices.', 'Luxury'),
+(200007, 800013, 'Accesories', 213005, 'Shop Target for Handbags & Purses you will love at great low prices.', 'Luxury'),
+(200008, 800001, 'Jewelery', 201004, 'Discover on-trend necklaces to layer like pendants, chokers, drop.', 'Luxury'),
+(200009, 800015, 'Jewelery', 215004, 'Discover on-trend necklaces to layer like pendants, chokers, drop.', 'Luxury'),
+(200010, 800001, 'Electronics', 201006, 'Exclusive and latest electronic gagdgets', 'Consumer'),
+(200011, 800015, 'Electronics', 215006, 'Exclusive and latest electronic gagdgets', 'Consumer'),
+(200012, 800013, 'Electronics', 213006, 'Exclusive and latest electronic gagdgets', 'Consumer'),
+(200013, 800001, 'Clothing', 201007, 'All kinds of Clothing you need for all seasons!!', 'Consumer'),
+(200014, 800013, 'Clothing', 213007, 'All kinds of Clothing you need for all seasons!!', 'Consumer'),
+(200015, 800001, 'Furniture', 201008, 'Explore our extensive range of chairs for your dining room, living room and office.', 'Superior'),
+(200016, 800001, 'Supplements', 201010, 'We have solutions to prepare your body and mind', 'Consumer'),
+(200017, 800015, 'Supplements', 215010, 'We have solutions to prepare your body and mind', 'Consumer'),
+(200018, 800015, 'Coffee', 215002, 'This product is labelled to United States standards and may differ from similar products sold.', 'Common'),
+(200019, 800013, 'Supplements', 213010, 'We have solutions to prepare your body and mind', 'Consumer'),
+(200020, 800015, 'Furniture', 215008, 'Explore our extensive range of chairs for your dining room, living room and office.', 'Superior'),
+(200021, 800015, 'Books', 215009, 'A book is a medium for recording information in the form of writing or images.', 'Superior'),
+(200022, 800013, 'Beverages', 213001, 'Enjoy the delicious, all-natural refreshment of Simply Lemonade combin', 'Common'),
+(200023, 800013, 'Digital Games', 213003, 'Online shopping for Video Games from a great selection of PC, Mac.', 'Digital'),
+(200024, 800013, 'Books', 213009, 'A book is a medium for recording information in the form of writing or images.', 'Superior'),
+(200025, 800013, 'Furniture', 213008, 'Explore our extensive range of chairs for your dining room, living room and office.', 'Superior'),
+(200026, 800015, 'Digital Games', 215003, 'Online shopping for Video Games from a great selection of PC, Mac.', 'Digital'),
+(200027, 800013, 'Coffee', 213002, 'This product is labelled to United States standards and may differ from similar products sold.', 'Common');
