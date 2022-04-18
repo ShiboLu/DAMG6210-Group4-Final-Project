@@ -32,7 +32,7 @@ GO
 CREATE TABLE Department_T(
 	DepartmentID int not null PRIMARY KEY,
 	StoreID int,
-	DepartmantName varchar(25) not null,
+	DepartmantName varchar(40) not null,
 	[Description] varchar(100),
 	CONSTRAINT FK_Department_StoreID
 		FOREIGN KEY(StoreID) REFERENCES Store_T (StoreID)
@@ -76,7 +76,7 @@ CREATE TABLE Transaction_T(
 	PaymentAmount decimal(20,2),
 	PaymentDateTime datetime,
 	------------------------------
-	PaymentType varchar(10),
+	PaymentType varchar(15),
 	CONSTRAINT FK_Transaction_StoreID
 		FOREIGN KEY(StoreID) REFERENCES Store_T (StoreID),
 	CONSTRAINT FK_Transaction_CustomerID

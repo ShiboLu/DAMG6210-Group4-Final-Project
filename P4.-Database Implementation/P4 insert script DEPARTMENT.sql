@@ -1,5 +1,5 @@
 alter table Department_T
-alter column DeparmantName char(40)
+alter column DepartmantName char(40)
 --inserting values in Department table--
 select*from Department_T
 insert into Department_T values (4001, 800001, 'Grocery','Grocery Items');
