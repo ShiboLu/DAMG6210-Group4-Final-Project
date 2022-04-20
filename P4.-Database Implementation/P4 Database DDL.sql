@@ -158,8 +158,6 @@ CREATE TABLE Product_T(
 >>>>>>> Stashed changes
 	ExpiryDate date,
 	DateManufactured date,
-	CONSTRAINT FK_Product_TransactionID
-		FOREIGN KEY(TransactionID) REFERENCES Transaction_T (TransactionID),
 	CONSTRAINT FK_Product_ShipmentID
 		FOREIGN KEY(ShipmentID) REFERENCES Shipment_T (ShipmentID),
 	CONSTRAINT FK_Product_BrandID
