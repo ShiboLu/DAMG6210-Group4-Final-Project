@@ -44,10 +44,11 @@ GO
 OPEN SYMMETRIC KEY EmpPass_SM
 	DECRYPTION BY CERTIFICATE EmpPass;
 
+
 SELECT *, 
     CONVERT(int, DecryptByKey([password]))   
     AS 'Decrypted password',
-    CONVERT(varchar(300), DecryptByKey(EnSSN))   
+    CONVERT(varchar(25), DecryptByKey(EnSSN))   
     AS 'Decrypted SSN'
     FROM dbo.Employee_T;  
 GO  
