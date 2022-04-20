@@ -151,7 +151,7 @@ CREATE TABLE Product_T(
 	DateReceived date,
 	DateSold date,
 	UnitPrice decimal(20,2),
-	Model varchar(15),
+	Model varchar(30),
 	ExpiryDate date,
 	DateManufactured date,
 	CONSTRAINT FK_Product_TransactionID
