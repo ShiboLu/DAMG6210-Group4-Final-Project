@@ -2,6 +2,7 @@ use DAMG6210_G4
 GO
 
 alter table Employee_T add [password] varbinary(300)
+alter table Employee_T add EnSSN varbinary(300)
 
 select *
 FROM sys.symmetric_keys;
@@ -34,7 +35,10 @@ OPEN SYMMETRIC KEY EmpPass_SM
 
 UPDATE dbo.Employee_T 
 	set [password] = EncryptByKey(KEY_GUID('EmpPass_SM'), 
-							convert(varbinary, EmployeeID))
+							convert(varbinary, EmployeeID)),
+		EnSSN = EncryptByKey(KEY_GUID('EmpPass_SM'), 
+							convert(varbinary, SSN))
+
 GO
 
 OPEN SYMMETRIC KEY EmpPass_SM
@@ -42,6 +46,9 @@ OPEN SYMMETRIC KEY EmpPass_SM
 
 SELECT *, 
     CONVERT(int, DecryptByKey([password]))   
-    AS 'Decrypted password'
+    AS 'Decrypted password',
+    CONVERT(varchar(300), DecryptByKey(EnSSN))   
+    AS 'Decrypted SSN'
     FROM dbo.Employee_T;  
 GO  
+

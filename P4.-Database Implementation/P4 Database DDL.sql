@@ -43,7 +43,7 @@ CREATE TABLE Employee_T(
 	EmployeeID int not null PRIMARY KEY,
 	FirstName varchar(40),
 	LastName varchar(40),
-	SSN char(9) not null,
+	SSN varchar(25) not null,
 	--NOT SURE HOW TO CREATE IT AS FOREIGN KEY--
 	SupervisorID int,
 	--------------------------------------------
@@ -151,7 +151,11 @@ CREATE TABLE Product_T(
 	DateReceived date,
 	DateSold date,
 	UnitPrice decimal(20,2),
+<<<<<<< Updated upstream
 	Model varchar(30),
+=======
+	Model varchar(35),
+>>>>>>> Stashed changes
 	ExpiryDate date,
 	DateManufactured date,
 	CONSTRAINT FK_Product_TransactionID

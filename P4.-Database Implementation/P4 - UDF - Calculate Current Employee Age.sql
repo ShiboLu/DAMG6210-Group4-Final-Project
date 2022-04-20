@@ -26,7 +26,7 @@ end
 --Returning the result
 return @Age
 end
-
+go
 
 --Function Call
 select EmployeeID,
